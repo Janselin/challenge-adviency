@@ -1,0 +1,16 @@
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card__title { 
+    text-align: center;
+}
+
+.card__list {
+    text-align: center;
+}
+
+
