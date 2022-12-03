@@ -1,12 +1,48 @@
 
-.body {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
+
+
+
+:root {
+    --white: #ffffff;
+    --green: #008F74
+    --cream: #FFF5E5;
+    --red: #E43500;
+    --blue: #3F4E89;
+    --darkblue: #2B3353;
+    --cookie: #DE8E00;
+    --black: #000000;
+
+    font-size: 16px;
+
 }
 
+
+.body {
+    
+    /* display: flex;
+    justify-content: center;
+    align-content: center;       */
+
+    background: var(--darkblue) url('../assets/1.png') no-repeat right;
+    background-size: contain;
+
+}
+
+
+.card {
+    color: var(--white);
+    border: 1px solid white;
+    width: 50%;
+    height: 100%;
+
+
+}
 .card__title { 
     text-align: center;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 3em;
 }
 
 .card__list {
