@@ -3,6 +3,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+@font-face {
+    font-family: "Christmas";
+    src: url("../fonts/Christmas.ttf") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "ForChristmas";
+    src: url("../fonts/ForChristmas.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 
 
@@ -15,9 +31,12 @@
     --darkblue: #2B3353;
     --cookie: #DE8E00;
     --black: #000000;
+    
 
+    --title: "ForChristmas";
+    --parrafo: 'Roboto';
+    
     font-size: 16px;
-
 }
 
 
@@ -29,27 +48,30 @@
 
     background: var(--darkblue) url('../assets/1.png') no-repeat right;
     background-size: contain;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--parrafo);
+    overflow-y: hidden;
 
 }
 
 
 .card {
-    color: var(--white);
-    border: 1px solid white;
+    
     border-radius: 7px;
-    width: 50%;
+    width: 40%;
     height: 70%;
     background-color: var(--cream);
-    margin: 6em 6em;
+    /* margin: 8em 20em; */
+    margin: 7em auto;
     padding: 1em 3em;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 
 }
 .card__title { 
     color: var(--red);
     text-align: center;
-    font-family: 'Mountains of Christmas', cursive;
+    font-family: var(--title);
     font-size: 3em;
 }
 
@@ -58,6 +80,7 @@
     color: var(--blue);
     font-size: 1.3rem;
     font-weight: 700;
+    font-family: var(--parrafo);
 }
 
 
